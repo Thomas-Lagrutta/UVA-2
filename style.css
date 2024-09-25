@@ -1,80 +1,82 @@
-/* General */
+/* Fondo del cuerpo de la página */
 body {
     font-family: Arial, sans-serif;
     background-color: #A6A6A6;
     color: #333;
-
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
-h2, h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+
+/* Estilo para el formulario de contacto */
+form label {
+    display: block;
+    margin-top: 10px;
 }
 
-p.lead {
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-/* Imagenes */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Formularios */
-form {
-    padding: 0 15px;
-}
-
-input, textarea {
+form input, form textarea {
     width: 100%;
     padding: 10px;
-    font-size: 1rem;
-    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
+form input[type="submit"] {
+    background-color: #737373;
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 1rem;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+form input[type="submit"]:hover {
+    background-color: #595959;
 }
 
-/* Bloques de texto */
-blockquote {
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-left: 5px solid #007bff;
-    font-style: italic;
-}
-
-blockquote p {
-    font-size: 1rem;
-}
-
-/* Contact Information */
-.text-center p {
-    font-size: 1rem;
+/* Estilo para las certificaciones */
+main img {
+    width: 100%;
+    max-width: 700px;
     margin-bottom: 10px;
 }
 
+p {
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 20px;
+}
+  
+nav ul {
+    display: flex;
+    justify-content: flex-start; /* Alinear a la izquierda */
+    list-style: none;
+}
+  
+nav ul li {
+    margin-right: 20px; /* Espaciado entre elementos */
+}
+  
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+  
+nav ul li a:hover {
+    background-color: #444;
+}
+
+
+/* Estilo para el header */
 .header-background {
     background-color: #737373;
-    color: white; /* Para que el texto contraste bien con el fondo */
     padding: 20px;
+    text-align: center;
 }
 
 .header-background nav ul {
@@ -82,7 +84,7 @@ blockquote p {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Centra los elementos del menú */
+    justify-content: center;
 }
 
 .header-background nav ul li {
@@ -90,45 +92,281 @@ blockquote p {
 }
 
 .header-background nav ul li a {
-    color:  #0D0D0D; /* Enlaces en blanco para buena visibilidad */
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
 .header-background nav ul li a:hover {
-    color: #cccccc; /* Cambia el color al pasar el ratón */
+    color: #cccccc;
+}
+
+/* Centrar el contenido */
+.content-center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Estilo para el título */
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilo para el párrafo */
+.description {
+    font-size: 1.1rem;
+    margin-bottom: 20px; /* Margen inferior para separarlo de la imagen */
+    line-height: 1.6;
+}
+
+/* Estilo para la imagen */
+.custom-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor de la imagen */
 }
 
 
+/* Contenedor centralizado */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Contenedor principal para la sección "Sobre mí" */
+.about-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Centrado de contenido */
+.about-content {
+    text-align: left;
+    margin: 0 auto;
+}
+
+/* Estilo para el título de la sección */
+.about-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el texto descriptivo */
+.about-text {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #333;
+}
+
+
+/* Contenedor principal del CV */
+.cv-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el título principal */
+.cv-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilo para la sección de contacto */
+.cv-contact-info {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.cv-contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Estilo general para las secciones */
+.cv-section {
+    margin-bottom: 30px;
+}
+
+/* Títulos de las secciones */
+.cv-section-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Listas en las secciones */
+.cv-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.cv-list li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Enlaces dentro del contenido */
+.cv-container a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.cv-container a:hover {
+    text-decoration: underline;
+}
+
+.contacto {
+    border: 2px solid #333; /* Bordes del cuadrado */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Limitar el ancho máximo */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Color de fondo para destacar */
+}
+  
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.contacto form {
+    margin-bottom: 20px;
+}
+  
+.contacto input, .contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.contacto input[type="submit"] {
+    width: auto;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+.contacto input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.certificaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+  
+.certificaciones h2 {
+    margin-bottom: 20px;
+}
+  
+.certificaciones img {
+    width: 50%; /* Más pequeñas en pantallas grandes */
+    height: auto;
+    margin-bottom: 15px;
+}
+  
+.certificaciones p {
+    max-width: 700px;
+    margin-bottom: 20px;
+    text-align: justify; /* Alineación de texto justificada */
+}
+  
+
+/* Estilo para el footer */
 .footer-background {
     background-color: #262626;
-    color: white; 
+    color: rgb(0, 0, 0);
     padding: 20px;
     text-align: center;
 }
 
-.footer-background a {
-    color: #ffffff; 
+.footer-background .social-links a {
+    color: #000000;
     text-decoration: none;
+    margin: 0 10px;
 }
 
-.footer-background a:hover {
-    color: #cccccc; 
+.footer-background .social-links a:hover {
+    color: #cccccc;
 }
 
 
-/* Responsive: Pantallas menores a 400px */
-@media (max-width: 400px) {
-    h2 {
-        font-size: 1.3rem;
+
+
+/* Para pantallas pequeñas (mobile) */
+@media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start; /* Alinear a la izquierda también en móvil */
+    }
+  
+    nav ul li {
+      margin-bottom: 10px;
+    }
+  
+    nav ul li a {
+      padding: 10px 15px;
+    }
+  }
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 600px) {
+    .cv-container {
+        padding: 10px; /* Menos padding en pantallas pequeñas */
     }
 
-    p.lead, blockquote p {
-        font-size: 1rem;
+    .cv-title {
+        font-size: 1.8rem; /* Tamaño de fuente más pequeño para el título del CV */
     }
 
-    button {
-        font-size: 0.9rem;
-        padding: 8px;
+    .cv-section-title {
+        font-size: 1.5rem; /* Tamaño de fuente más pequeño para los títulos de las secciones */
+    }
+
+    .cv-text {
+        font-size: 1rem; /* Tamaño de fuente más pequeño para el texto descriptivo */
+    }
+}
+
+
+  /* Para pantallas pequeñas (mobile) */
+@media (max-width: 768px) {
+    .certificaciones img {
+      width: 100%; /* Imágenes más grandes en móviles */
+    }
+  
+    .certificaciones p {
+      width: 100%;
+    }
+}
+  
+
+@media (max-width: 600px) {
+
+    .footer {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño en el footer */
     }
 }
